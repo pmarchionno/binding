@@ -1,5 +1,8 @@
 <div class="container">
   <div class="row">
+    <app-listado></app-listado>
+    <br>
+
     <h2>Data Binding</h2>
     <h3>Hola, mi nombre es {{nombre}}</h3>
     <h3>La suma de 5 + 5 es igual a {{getSuma(5,5)}}</h3>
@@ -20,7 +23,7 @@
     <h2>Two Way Data Binding</h2>
     <input type="text" clase="form-control" placeholder="Escribir algo aquí" [(ngModel)]="textoTwoDataBinding">
     <br>
-    Texto replicado del cuadro input:
+    Texto replicado del cuadro input: 
     <i>{{textoTwoDataBinding}}</i>
   </div>
 </div>

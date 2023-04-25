@@ -1,0 +1,18 @@
+<div class="container">
+    <h3>Este es mi listado</h3>
+    <table class="table" *ngIf="lista.length > 0">
+        <thead>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Estado</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let lis of lista; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{lis.nombre}}</td>
+                <td>{{lis.estado}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 *ngIf="lista.length === 0">No hay registros</h3>
+</div>
